@@ -1,3 +1,7 @@
 .app {
-  width: 500px;
+  width: 80vw;
+}
+
+mat-panel-title {
+  font-weight: 500;
 }
