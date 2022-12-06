@@ -7,6 +7,10 @@ import {sections} from "../data/sections";
 })
 export class SectionService {
 
-  private sections: ISection[] = sections
+  public sections: ISection[] = sections
   constructor() { }
+
+  public getSections(): ISection[] {
+    return this.sections;
+  }
 }

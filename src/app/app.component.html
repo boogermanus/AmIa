@@ -1,6 +1,14 @@
 <div class="d-flex justify-content-center">
   <mat-card class="app">
-    <h1>Hi from AmIA</h1>
+    <div id="expand-grid">
+      <div *ngFor="let section of sections">
+        <mat-expansion-panel>
+          <mat-expansion-panel-header>
+            <mat-panel-title>{{section.name}}</mat-panel-title>
+          </mat-expansion-panel-header>
+        </mat-expansion-panel>
+      </div>
+    </div>
   </mat-card>
 </div>
 
