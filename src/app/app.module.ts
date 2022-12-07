@@ -17,8 +17,6 @@ import {MatCardModule} from "@angular/material/card";
     AppRoutingModule,
     BrowserAnimationsModule,
     MaterialModule,
-    MatFormFieldModule,
-    MatSelectModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -2,6 +2,8 @@ import {NgModule} from '@angular/core';
 import {CommonModule} from '@angular/common';
 import {MatCardModule} from "@angular/material/card";
 import {MatExpansionModule} from "@angular/material/expansion";
+import {MatFormFieldModule} from "@angular/material/form-field";
+import {MatSelectModule} from "@angular/material/select";
 
 
 @NgModule({
@@ -9,11 +11,16 @@ import {MatExpansionModule} from "@angular/material/expansion";
   imports: [
     CommonModule,
     MatCardModule,
-    MatExpansionModule
+    MatExpansionModule,
+    MatFormFieldModule,
+    MatSelectModule,
   ],
   exports: [
     MatCardModule,
-    MatExpansionModule
+    MatExpansionModule,
+    MatFormFieldModule,
+    MatSelectModule,
+
   ]
 })
 export class MaterialModule {
