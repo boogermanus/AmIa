@@ -11,9 +11,7 @@ import { NumberFormatStyle } from '@angular/common';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  public sections: ISection[];
 
-  constructor(private sectionsService: SectionService, private skillLevelService: SkillLevelService) {
-    this.sections = sectionsService.getSections();
+  constructor() {
   }
 }
