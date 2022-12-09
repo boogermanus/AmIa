@@ -12,10 +12,8 @@ import { NumberFormatStyle } from '@angular/common';
 })
 export class AppComponent {
   public sections: ISection[];
-  public skillLevels: ISkillLevel[];
 
   constructor(private sectionsService: SectionService, private skillLevelService: SkillLevelService) {
     this.sections = sectionsService.getSections();
-    this.skillLevels = skillLevelService.getSkillLevels();
   }
 }
