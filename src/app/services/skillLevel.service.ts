@@ -7,7 +7,7 @@ import {skillLevels} from "../data/skillLevels";
 })
 export class SkillLevelService {
 
-  public skillLevels: ISkillLevel[] = skillLevels
+  private skillLevels: ISkillLevel[] = skillLevels
   constructor() { }
 
   public getSkillLevels(): ISkillLevel[] {
