@@ -1,26 +1,35 @@
 import {ISkillLevel} from "../interfaces/iskillLevel";
 
+enum skillLevelsEnum {
+    Novice = 1,
+    Beginner = 2,
+    Competent = 3,
+    Proficient = 4,
+    Expert = 5
+}
+
 const skillLevels: ISkillLevel[] = [
     {
         DisplayText: "Novice",
-        Value: 1
+        Value: skillLevelsEnum.Novice
     },
     {
         DisplayText: "Beginner",
-        Value: 2
+        Value: skillLevelsEnum.Beginner
     },
     {
         DisplayText: "Competent",
-        Value: 3
+        Value: skillLevelsEnum.Competent
     },
     {
         DisplayText: "Proficient",
-        Value: 4
+        Value: skillLevelsEnum.Proficient
     },
     {
         DisplayText: "Expert",
-        Value: 5
+        Value: skillLevelsEnum.Expert
     }
 ]
 
 export {skillLevels};
+export {skillLevelsEnum};
