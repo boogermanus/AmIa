@@ -9,12 +9,14 @@ import {MatSelectModule} from '@angular/material/select';
 import {MatCardModule} from "@angular/material/card";
 import { JobComponent } from './components/job/job.component';
 import { SectionComponent } from './components/section/section.component';
+import { SkillLevelComponent } from './components/skill-level/skill-level.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     JobComponent,
-    SectionComponent
+    SectionComponent,
+    SkillLevelComponent
   ],
   imports: [
     BrowserModule,
