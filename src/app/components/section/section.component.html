@@ -1,0 +1,20 @@
+<div id="expand-grid">
+  <div *ngFor="let section of sections">
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        <mat-panel-title>{{section.name}}</mat-panel-title>
+      </mat-expansion-panel-header>
+      <div *ngFor="let competency of section.competencies">
+        <h4>{{competency.name}}</h4>
+        <mat-form-field appearance="fill">
+          <mat-label>Skill Level</mat-label>
+          <mat-select>
+            <mat-option *ngFor="let skillLevel of skillLevels" [value]="skillLevel.Value">
+              {{skillLevel.DisplayText}}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+    </mat-expansion-panel>
+  </div>
+</div>

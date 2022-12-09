@@ -7,10 +7,14 @@ import {MaterialModule} from "./material.module";
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatSelectModule} from '@angular/material/select';
 import {MatCardModule} from "@angular/material/card";
+import { JobComponent } from './components/job/job.component';
+import { SectionComponent } from './components/section/section.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    JobComponent,
+    SectionComponent
   ],
   imports: [
     BrowserModule,
