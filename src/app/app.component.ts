@@ -7,6 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 
+  private requiredScore: number = 0;
   constructor() {
+  }
+
+  onJobChange(event: any): void {
+    console.log(event);
   }
 }

@@ -1,8 +1,8 @@
 <div id="jobs">
   <mat-form-field>
     <mat-label>I want this job!</mat-label>
-    <mat-select>
-      <mat-option *ngFor="let job of jobs" [value]="job.requiredScore">{{job.name}}</mat-option>
+    <mat-select (valueChange)="onChange()">
+      <mat-option *ngFor="let job of jobs" [value]="job.name">{{job.name}}</mat-option>
     </mat-select>
   </mat-form-field>
 </div>
