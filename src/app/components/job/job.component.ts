@@ -14,14 +14,14 @@ export class JobComponent implements OnInit {
   @Output() jobChanged = new EventEmitter<string>;
   @ViewChild(MatSelect) job!: MatSelect;
   constructor(private jobService: JobsService) {
-    this.jobs = this.jobService.getJobs();
+
   }
 
   ngOnInit(): void {
+    this.jobs = this.jobService.getJobs();
   }
 
   public onChange(): void {
-    console.log('test')
     this.jobChanged.emit(this.job.value);
   }
 }
