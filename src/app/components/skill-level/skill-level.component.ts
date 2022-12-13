@@ -1,4 +1,4 @@
-import {Component, OnInit, QueryList, ViewChildren} from '@angular/core';
+import {Component, Input, OnInit, QueryList, ViewChildren} from '@angular/core';
 import {ISkillLevel} from "../../interfaces/iskillLevel";
 import {SkillLevelService} from "../../services/skillLevel.service";
 import {MatSelect} from "@angular/material/select";
@@ -11,7 +11,7 @@ import {MatSelect} from "@angular/material/select";
 export class SkillLevelComponent implements OnInit {
 
   public skillLevels: ISkillLevel[] = []
-
+// viewchildren time?
   constructor(private skillLevelService: SkillLevelService) { }
 
   ngOnInit(): void {
@@ -19,7 +19,9 @@ export class SkillLevelComponent implements OnInit {
   }
 
   public onValueChange(): void {
-    return;
+    // this is just when _one_ value changes.
+    // identify the one.
+    console.log('test');
   }
 
 }
