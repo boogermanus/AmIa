@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {ISection} from "../../interfaces/isection";
 import {SectionService} from "../../services/section.service";
-import {SkillLevelService} from "../../services/skillLevel.service";
 import {ISkillLevel} from "../../interfaces/iskillLevel";
 
 @Component({
@@ -13,11 +12,10 @@ export class SectionComponent implements OnInit {
 
   public sections: ISection[] = []
   public skillLevels: ISkillLevel[] = [];
-  constructor(private sectionService: SectionService, private skillLevelService: SkillLevelService) { }
+  constructor(private sectionService: SectionService) { }
 
   ngOnInit(): void {
     this.sections = this.sectionService.getSections();
-    this.skillLevels = this.skillLevelService.getSkillLevels();
   }
 
 }

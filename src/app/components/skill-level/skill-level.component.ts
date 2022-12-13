@@ -1,6 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit, QueryList, ViewChildren} from '@angular/core';
 import {ISkillLevel} from "../../interfaces/iskillLevel";
 import {SkillLevelService} from "../../services/skillLevel.service";
+import {MatSelect} from "@angular/material/select";
 
 @Component({
   selector: 'app-skill-level',
@@ -10,6 +11,7 @@ import {SkillLevelService} from "../../services/skillLevel.service";
 export class SkillLevelComponent implements OnInit {
 
   public skillLevels: ISkillLevel[] = []
+
   constructor(private skillLevelService: SkillLevelService) { }
 
   ngOnInit(): void {
