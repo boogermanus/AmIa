@@ -7,10 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 
+  public jobId: number = 0;
   constructor() {
   }
 
   onJobChange(event: string): void {
-    console.log(event);
+    this.jobId = +event;
   }
 }
