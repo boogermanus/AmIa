@@ -1,6 +1,6 @@
 <mat-form-field appearance="fill">
   <mat-label>Skill Level</mat-label>
-  <mat-select>
+  <mat-select (valueChange)="onValueChange()">
     <mat-option *ngFor="let skillLevel of skillLevels" [value]="skillLevel.Value">
       {{skillLevel.DisplayText}}
     </mat-option>

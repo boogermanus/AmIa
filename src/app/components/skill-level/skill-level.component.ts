@@ -18,4 +18,8 @@ export class SkillLevelComponent implements OnInit {
     this.skillLevels = this.skillLevelService.getSkillLevels();
   }
 
+  public onValueChange(): void {
+    return;
+  }
+
 }
