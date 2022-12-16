@@ -11,7 +11,6 @@ import {MatSelect} from "@angular/material/select";
 export class SkillLevelComponent implements OnInit {
 
   public skillLevels: ISkillLevel[] = []
-// viewchildren time?
   constructor(private skillLevelService: SkillLevelService) { }
 
   ngOnInit(): void {

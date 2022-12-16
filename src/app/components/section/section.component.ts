@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 import {ISection} from "../../interfaces/isection";
 import {SectionService} from "../../services/section.service";
 
@@ -10,6 +10,7 @@ import {SectionService} from "../../services/section.service";
 export class SectionComponent implements OnInit {
 
   public sections: ISection[] = []
+  @Input()public disabled: boolean = true;
 
   constructor(private sectionService: SectionService) { }
 

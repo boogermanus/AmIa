@@ -10,13 +10,15 @@ import {MatCardModule} from "@angular/material/card";
 import { JobComponent } from './components/job/job.component';
 import { SectionComponent } from './components/section/section.component';
 import { SkillLevelComponent } from './components/skill-level/skill-level.component';
+import { CompetencyComponent } from './components/competency/competency.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     JobComponent,
     SectionComponent,
-    SkillLevelComponent
+    SkillLevelComponent,
+    CompetencyComponent
   ],
   imports: [
     BrowserModule,

@@ -9,11 +9,13 @@ import {SectionComponent} from "./components/section/section.component";
 export class AppComponent {
 
   public jobId: number = 0;
+  public sectionsDisabled: boolean = true;
   @ViewChild(SectionComponent) private sectionComponent!: SectionComponent;
   constructor() {
   }
 
   onJobChange(event: string): void {
     this.jobId = +event;
+    this.sectionsDisabled = false;
   }
 }

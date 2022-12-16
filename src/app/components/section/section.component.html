@@ -1,12 +1,11 @@
 <div id="expand-grid">
   <div *ngFor="let section of sections">
-    <mat-expansion-panel>
+    <mat-expansion-panel [disabled]="this.disabled">
       <mat-expansion-panel-header>
         <mat-panel-title>{{section.name}}</mat-panel-title>
       </mat-expansion-panel-header>
       <div *ngFor="let competency of section.competencies">
-        <h4>{{competency.name}}</h4>
-        <app-skill-level></app-skill-level>
+        <app-competency [competency]="competency"></app-competency>
       </div>
     </mat-expansion-panel>
   </div>
