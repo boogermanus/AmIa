@@ -11,6 +11,7 @@ import {MatSelect} from "@angular/material/select";
 export class SkillLevelComponent implements OnInit {
 
   public skillLevels: ISkillLevel[] = []
+  @Input()public jobId: number = 0;
   constructor(private skillLevelService: SkillLevelService) { }
 
   ngOnInit(): void {

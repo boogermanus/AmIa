@@ -9,6 +9,7 @@ import {ICompetency} from "../../interfaces/icompetency";
 export class CompetencyComponent implements OnInit {
 
   @Input()public competency: ICompetency = {id: 0, name: ""}
+  @Input()public jobId: number = 0;
   constructor() { }
 
   ngOnInit(): void {
