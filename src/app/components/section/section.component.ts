@@ -11,6 +11,7 @@ export class SectionComponent implements OnInit {
 
   public sections: ISection[] = []
   @Input()public disabled: boolean = true;
+  @Input()public jobId: number = 0;
 
   constructor(private sectionService: SectionService) { }
 

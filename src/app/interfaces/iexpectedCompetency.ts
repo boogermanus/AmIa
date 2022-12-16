@@ -8,4 +8,5 @@ export interface IExpectedCompetency {
         Lead: number,
         SeniorLead: number,
       }
+    jobLevels: number[]
   }
