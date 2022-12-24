@@ -28,7 +28,6 @@ export class SkillLevelComponent implements OnInit {
       startWith(this.select.value),
       pairwise()
     ).subscribe(([old,value]) => {
-      console.log(old, value);
       let previousValue: number = +old;
       let newValue: number = +value;
       this.valueChanged.emit({previousValue, newValue});

@@ -15,8 +15,4 @@ export class ExpectedCompetencyService {
   public getExpectedCompetencies(): IExpectedCompetency[] {
     return this.expectedCompetencies;
   }
-
-  public getExpectedCompetencyForJobLevel(jobLevel: number): number {
-    return 0;
-  }
 }
