@@ -19,7 +19,7 @@ export class SkillLevelComponent implements OnInit {
   @Output() public valueChanged: EventEmitter<ISkillLevelChange> = new EventEmitter<ISkillLevelChange>();
   public select: FormControl = new FormControl('');
 
-  constructor(private skillLevelService: SkillLevelService, private expectedCompetencyService: ExpectedCompetencyService) {
+  constructor(private skillLevelService: SkillLevelService) {
   }
 
   ngOnInit(): void {

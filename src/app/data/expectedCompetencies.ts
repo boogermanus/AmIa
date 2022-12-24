@@ -6,14 +6,6 @@ const expectedCompetencies: IExpectedCompetency[] = [
   //Job Knowledge
   {
     competencyId: 1,
-    jobLevel: {
-      Intern: SkillLevel.Beginner,
-      Developer: SkillLevel.Competent,
-      Engineer: SkillLevel.Proficient,
-      SeniorEngineer: SkillLevel.Proficient,
-      Lead: SkillLevel.Proficient,
-      SeniorLead: SkillLevel.Expert,
-    },
     jobLevels: [
       SkillLevel.Beginner,
       SkillLevel.Competent,
@@ -25,14 +17,6 @@ const expectedCompetencies: IExpectedCompetency[] = [
   },
   {
     competencyId: 2,
-    jobLevel: {
-      Intern: SkillLevel.Novice,
-      Developer: SkillLevel.Beginner,
-      Engineer: SkillLevel.Competent,
-      SeniorEngineer: SkillLevel.Proficient,
-      Lead: SkillLevel.Expert,
-      SeniorLead: SkillLevel.Expert,
-    },
     jobLevels: [SkillLevel.Novice,
       SkillLevel.Beginner,
       SkillLevel.Competent,
@@ -43,14 +27,6 @@ const expectedCompetencies: IExpectedCompetency[] = [
   },
   {
     competencyId: 3,
-    jobLevel: {
-      Intern: SkillLevel.Novice,
-      Developer: SkillLevel.Proficient,
-      Engineer: SkillLevel.Proficient,
-      SeniorEngineer: SkillLevel.Expert,
-      Lead: SkillLevel.Expert,
-      SeniorLead: SkillLevel.Expert,
-    },
     jobLevels: [
       SkillLevel.Novice,
       SkillLevel.Proficient,
@@ -62,14 +38,6 @@ const expectedCompetencies: IExpectedCompetency[] = [
   },
   {
     competencyId: 4,
-    jobLevel: {
-      Intern: SkillLevel.Novice,
-      Developer: SkillLevel.Beginner,
-      Engineer: SkillLevel.Competent,
-      SeniorEngineer: SkillLevel.Proficient,
-      Lead: SkillLevel.Proficient,
-      SeniorLead: SkillLevel.Expert,
-    },
     jobLevels: [
       SkillLevel.Novice,
       SkillLevel.Beginner,
@@ -82,14 +50,6 @@ const expectedCompetencies: IExpectedCompetency[] = [
   //Decision Making
   {
     competencyId: 5,
-    jobLevel: {
-      Intern: SkillLevel.Novice,
-      Developer: SkillLevel.Beginner,
-      Engineer: SkillLevel.Competent,
-      SeniorEngineer: SkillLevel.Proficient,
-      Lead: SkillLevel.Proficient,
-      SeniorLead: SkillLevel.Expert,
-    },
     jobLevels: [
       SkillLevel.Novice,
       SkillLevel.Beginner,
@@ -101,14 +61,6 @@ const expectedCompetencies: IExpectedCompetency[] = [
   },
   {
     competencyId: 6,
-    jobLevel: {
-      Intern: SkillLevel.Novice,
-      Developer: SkillLevel.Competent,
-      Engineer: SkillLevel.Proficient,
-      SeniorEngineer: SkillLevel.Expert,
-      Lead: SkillLevel.Expert,
-      SeniorLead: SkillLevel.Expert,
-    },
     jobLevels: [
       SkillLevel.Novice,
       SkillLevel.Competent,
@@ -120,14 +72,6 @@ const expectedCompetencies: IExpectedCompetency[] = [
   },
   {
     competencyId: 7,
-    jobLevel: {
-      Intern: SkillLevel.Novice,
-      Developer: SkillLevel.Beginner,
-      Engineer: SkillLevel.Competent,
-      SeniorEngineer: SkillLevel.Proficient,
-      Lead: SkillLevel.Expert,
-      SeniorLead: SkillLevel.Expert,
-    },
     jobLevels: [
       SkillLevel.Novice,
       SkillLevel.Beginner,
@@ -139,14 +83,6 @@ const expectedCompetencies: IExpectedCompetency[] = [
   },
   {
     competencyId: 8,
-    jobLevel: {
-      Intern: SkillLevel.Novice,
-      Developer: SkillLevel.Beginner,
-      Engineer: SkillLevel.Competent,
-      SeniorEngineer: SkillLevel.Proficient,
-      Lead: SkillLevel.Expert,
-      SeniorLead: SkillLevel.Expert,
-    },
     jobLevels: [
       SkillLevel.Novice,
       SkillLevel.Beginner,
@@ -158,14 +94,6 @@ const expectedCompetencies: IExpectedCompetency[] = [
   },
   {
     competencyId: 9,
-    jobLevel: {
-      Intern: SkillLevel.Novice,
-      Developer: SkillLevel.Novice,
-      Engineer: SkillLevel.Competent,
-      SeniorEngineer: SkillLevel.Proficient,
-      Lead: SkillLevel.Expert,
-      SeniorLead: SkillLevel.Expert,
-    },
     jobLevels: [
       SkillLevel.Novice,
       SkillLevel.Novice,
@@ -178,14 +106,6 @@ const expectedCompetencies: IExpectedCompetency[] = [
   //Development
   {
     competencyId: 10,
-    jobLevel: {
-      Intern: SkillLevel.Novice,
-      Developer: SkillLevel.Competent,
-      Engineer: SkillLevel.Proficient,
-      SeniorEngineer: SkillLevel.Proficient,
-      Lead: SkillLevel.Expert,
-      SeniorLead: SkillLevel.Expert,
-    },
     jobLevels: [
       SkillLevel.Novice,
       SkillLevel.Competent,
@@ -197,14 +117,6 @@ const expectedCompetencies: IExpectedCompetency[] = [
   },
   {
     competencyId: 11,
-    jobLevel: {
-      Intern: SkillLevel.Beginner,
-      Developer: SkillLevel.Competent,
-      Engineer: SkillLevel.Proficient,
-      SeniorEngineer: SkillLevel.Expert,
-      Lead: SkillLevel.Expert,
-      SeniorLead: SkillLevel.Expert,
-    },
     jobLevels: [
       SkillLevel.Beginner,
       SkillLevel.Competent,
@@ -216,14 +128,6 @@ const expectedCompetencies: IExpectedCompetency[] = [
   },
   {
     competencyId: 12,
-    jobLevel: {
-      Intern: SkillLevel.Beginner,
-      Developer: SkillLevel.Competent,
-      Engineer: SkillLevel.Proficient,
-      SeniorEngineer: SkillLevel.Expert,
-      Lead: SkillLevel.Expert,
-      SeniorLead: SkillLevel.Expert,
-    },
     jobLevels: [
       SkillLevel.Beginner,
       SkillLevel.Competent,
@@ -235,14 +139,6 @@ const expectedCompetencies: IExpectedCompetency[] = [
   },
   {
     competencyId: 13,
-    jobLevel: {
-      Intern: SkillLevel.Competent,
-      Developer: SkillLevel.Proficient,
-      Engineer: SkillLevel.Expert,
-      SeniorEngineer: SkillLevel.Expert,
-      Lead: SkillLevel.Expert,
-      SeniorLead: SkillLevel.Expert,
-    },
     jobLevels: [
       SkillLevel.Competent,
       SkillLevel.Proficient,
@@ -254,14 +150,6 @@ const expectedCompetencies: IExpectedCompetency[] = [
   },
   {
     competencyId: 14,
-    jobLevel: {
-      Intern: SkillLevel.Beginner,
-      Developer: SkillLevel.Competent,
-      Engineer: SkillLevel.Proficient,
-      SeniorEngineer: SkillLevel.Expert,
-      Lead: SkillLevel.Expert,
-      SeniorLead: SkillLevel.Expert
-    },
     jobLevels: [
       SkillLevel.Beginner,
       SkillLevel.Competent,
@@ -273,14 +161,6 @@ const expectedCompetencies: IExpectedCompetency[] = [
   },
   {
     competencyId: 15,
-    jobLevel: {
-      Intern: SkillLevel.Novice,
-      Developer: SkillLevel.Novice,
-      Engineer: SkillLevel.Beginner,
-      SeniorEngineer: SkillLevel.Competent,
-      Lead: SkillLevel.Proficient,
-      SeniorLead: SkillLevel.Expert,
-    },
     jobLevels: [
       SkillLevel.Novice,
       SkillLevel.Novice,
@@ -292,14 +172,6 @@ const expectedCompetencies: IExpectedCompetency[] = [
   },
   {
     competencyId: 16,
-    jobLevel: {
-      Intern: SkillLevel.Beginner,
-      Developer: SkillLevel.Competent,
-      Engineer: SkillLevel.Proficient,
-      SeniorEngineer: SkillLevel.Proficient,
-      Lead: SkillLevel.Proficient,
-      SeniorLead: SkillLevel.Expert
-    },
     jobLevels: [
       SkillLevel.Beginner,
       SkillLevel.Competent,
@@ -311,14 +183,6 @@ const expectedCompetencies: IExpectedCompetency[] = [
   },
   {
     competencyId: 17,
-    jobLevel: {
-      Intern: SkillLevel.Novice,
-      Developer: SkillLevel.Beginner,
-      Engineer: SkillLevel.Competent,
-      SeniorEngineer: SkillLevel.Proficient,
-      Lead: SkillLevel.Proficient,
-      SeniorLead: SkillLevel.Expert,
-    },
     jobLevels: [
       SkillLevel.Novice,
       SkillLevel.Beginner,
@@ -330,14 +194,6 @@ const expectedCompetencies: IExpectedCompetency[] = [
   },
   {
     competencyId: 18,
-    jobLevel: {
-      Intern: SkillLevel.Competent,
-      Developer: SkillLevel.Proficient,
-      Engineer: SkillLevel.Expert,
-      SeniorEngineer: SkillLevel.Expert,
-      Lead: SkillLevel.Expert,
-      SeniorLead: SkillLevel.Expert,
-    },
     jobLevels: [
       SkillLevel.Competent,
       SkillLevel.Proficient,
@@ -349,14 +205,6 @@ const expectedCompetencies: IExpectedCompetency[] = [
   },
   {
     competencyId: 19,
-    jobLevel: {
-      Intern: SkillLevel.Novice,
-      Developer: SkillLevel.Novice,
-      Engineer: SkillLevel.Beginner,
-      SeniorEngineer: SkillLevel.Competent,
-      Lead: SkillLevel.Proficient,
-      SeniorLead: SkillLevel.Proficient,
-    },
     jobLevels: [
       SkillLevel.Novice,
       SkillLevel.Novice,
@@ -368,14 +216,6 @@ const expectedCompetencies: IExpectedCompetency[] = [
   },
   {
     competencyId: 20,
-    jobLevel: {
-      Intern: SkillLevel.Novice,
-      Developer: SkillLevel.Novice,
-      Engineer: SkillLevel.Competent,
-      SeniorEngineer: SkillLevel.Proficient,
-      Lead: SkillLevel.Proficient,
-      SeniorLead: SkillLevel.Expert,
-    },
     jobLevels: [
       SkillLevel.Novice,
       SkillLevel.Novice,
@@ -387,14 +227,6 @@ const expectedCompetencies: IExpectedCompetency[] = [
   },
   {
     competencyId: 21,
-    jobLevel: {
-      Intern: SkillLevel.Novice,
-      Developer: SkillLevel.Novice,
-      Engineer: SkillLevel.Beginner,
-      SeniorEngineer: SkillLevel.Competent,
-      Lead: SkillLevel.Proficient,
-      SeniorLead: SkillLevel.Expert,
-    },
     jobLevels: [
       SkillLevel.Novice,
       SkillLevel.Novice,
@@ -407,14 +239,6 @@ const expectedCompetencies: IExpectedCompetency[] = [
   //Dependability
   {
     competencyId: 22,
-    jobLevel: {
-      Intern: SkillLevel.Novice,
-      Developer: SkillLevel.Beginner,
-      Engineer: SkillLevel.Proficient,
-      SeniorEngineer: SkillLevel.Expert,
-      Lead: SkillLevel.Expert,
-      SeniorLead: SkillLevel.Expert,
-    },
     jobLevels: [
       SkillLevel.Novice,
       SkillLevel.Beginner,
@@ -426,14 +250,6 @@ const expectedCompetencies: IExpectedCompetency[] = [
   },
   {
     competencyId: 23,
-    jobLevel: {
-      Intern: SkillLevel.Novice,
-      Developer: SkillLevel.Beginner,
-      Engineer: SkillLevel.Competent,
-      SeniorEngineer: SkillLevel.Expert,
-      Lead: SkillLevel.Expert,
-      SeniorLead: SkillLevel.Expert,
-    },
     jobLevels: [
       SkillLevel.Novice,
       SkillLevel.Beginner,
@@ -445,14 +261,6 @@ const expectedCompetencies: IExpectedCompetency[] = [
   },
   {
     competencyId: 24,
-    jobLevel: {
-      Intern: SkillLevel.Beginner,
-      Developer: SkillLevel.Competent,
-      Engineer: SkillLevel.Proficient,
-      SeniorEngineer: SkillLevel.Expert,
-      Lead: SkillLevel.Expert,
-      SeniorLead: SkillLevel.Expert,
-    },
     jobLevels: [
       SkillLevel.Beginner,
       SkillLevel.Competent,
@@ -464,14 +272,6 @@ const expectedCompetencies: IExpectedCompetency[] = [
   },
   {
     competencyId: 25,
-    jobLevel: {
-      Intern: SkillLevel.Novice,
-      Developer: SkillLevel.Beginner,
-      Engineer: SkillLevel.Competent,
-      SeniorEngineer: SkillLevel.Proficient,
-      Lead: SkillLevel.Proficient,
-      SeniorLead: SkillLevel.Expert,
-    },
     jobLevels: [
       SkillLevel.Novice,
       SkillLevel.Beginner,
@@ -483,14 +283,6 @@ const expectedCompetencies: IExpectedCompetency[] = [
   },
   {
     competencyId: 26,
-    jobLevel: {
-      Intern: SkillLevel.Novice,
-      Developer: SkillLevel.Beginner,
-      Engineer: SkillLevel.Competent,
-      SeniorEngineer: SkillLevel.Proficient,
-      Lead: SkillLevel.Expert,
-      SeniorLead: SkillLevel.Expert,
-    },
     jobLevels: [
       SkillLevel.Novice,
       SkillLevel.Beginner,
@@ -503,14 +295,6 @@ const expectedCompetencies: IExpectedCompetency[] = [
   //Work Quantity and Quality
   {
     competencyId: 27,
-    jobLevel: {
-      Intern: SkillLevel.Beginner,
-      Developer: SkillLevel.Competent,
-      Engineer: SkillLevel.Proficient,
-      SeniorEngineer: SkillLevel.Expert,
-      Lead: SkillLevel.Expert,
-      SeniorLead: SkillLevel.Expert,
-    },
     jobLevels: [
       SkillLevel.Beginner,
       SkillLevel.Competent,
@@ -522,14 +306,6 @@ const expectedCompetencies: IExpectedCompetency[] = [
   },
   {
     competencyId: 28,
-    jobLevel: {
-      Intern: SkillLevel.Novice,
-      Developer: SkillLevel.Competent,
-      Engineer: SkillLevel.Proficient,
-      SeniorEngineer: SkillLevel.Expert,
-      Lead: SkillLevel.Expert,
-      SeniorLead: SkillLevel.Expert,
-    },
     jobLevels: [
       SkillLevel.Novice,
       SkillLevel.Competent,
@@ -542,14 +318,6 @@ const expectedCompetencies: IExpectedCompetency[] = [
   //Team Work
   {
     competencyId: 29,
-    jobLevel: {
-      Intern: SkillLevel.Competent,
-      Developer: SkillLevel.Proficient,
-      Engineer: SkillLevel.Proficient,
-      SeniorEngineer: SkillLevel.Expert,
-      Lead: SkillLevel.Expert,
-      SeniorLead: SkillLevel.Expert,
-    },
     jobLevels: [
       SkillLevel.Competent,
       SkillLevel.Proficient,
@@ -561,14 +329,6 @@ const expectedCompetencies: IExpectedCompetency[] = [
   },
   {
     competencyId: 30,
-    jobLevel: {
-      Intern: SkillLevel.Competent,
-      Developer: SkillLevel.Proficient,
-      Engineer: SkillLevel.Proficient,
-      SeniorEngineer: SkillLevel.Expert,
-      Lead: SkillLevel.Expert,
-      SeniorLead: SkillLevel.Expert,
-    },
     jobLevels: [
       SkillLevel.Competent,
       SkillLevel.Proficient,
@@ -580,14 +340,6 @@ const expectedCompetencies: IExpectedCompetency[] = [
   },
   {
     competencyId: 31,
-    jobLevel: {
-      Intern: SkillLevel.Novice,
-      Developer: SkillLevel.Novice,
-      Engineer: SkillLevel.Beginner,
-      SeniorEngineer: SkillLevel.Competent,
-      Lead: SkillLevel.Proficient,
-      SeniorLead: SkillLevel.Proficient,
-    },
     jobLevels: [
       SkillLevel.Novice,
       SkillLevel.Novice,
@@ -599,14 +351,6 @@ const expectedCompetencies: IExpectedCompetency[] = [
   },
   {
     competencyId: 32,
-    jobLevel: {
-      Intern: SkillLevel.Novice,
-      Developer: SkillLevel.Novice,
-      Engineer: SkillLevel.Beginner,
-      SeniorEngineer: SkillLevel.Competent,
-      Lead: SkillLevel.Proficient,
-      SeniorLead: SkillLevel.Expert,
-    },
     jobLevels: [
        SkillLevel.Novice,
    SkillLevel.Novice,
@@ -618,14 +362,6 @@ const expectedCompetencies: IExpectedCompetency[] = [
   },
   {
     competencyId: 33,
-    jobLevel: {
-      Intern: SkillLevel.Novice,
-      Developer: SkillLevel.Beginner,
-      Engineer: SkillLevel.Beginner,
-      SeniorEngineer: SkillLevel.Competent,
-      Lead: SkillLevel.Proficient,
-      SeniorLead: SkillLevel.Expert,
-    },
     jobLevels: [
        SkillLevel.Novice,
    SkillLevel.Beginner,
@@ -638,14 +374,6 @@ const expectedCompetencies: IExpectedCompetency[] = [
   //Client Focus
   {
     competencyId: 34,
-    jobLevel: {
-      Intern: SkillLevel.Novice,
-      Developer: SkillLevel.Beginner,
-      Engineer: SkillLevel.Competent,
-      SeniorEngineer: SkillLevel.Proficient,
-      Lead: SkillLevel.Proficient,
-      SeniorLead: SkillLevel.Proficient,
-    },
     jobLevels: [
        SkillLevel.Novice,
    SkillLevel.Beginner,
@@ -657,14 +385,6 @@ const expectedCompetencies: IExpectedCompetency[] = [
   },
   {
     competencyId: 35,
-    jobLevel: {
-      Intern: SkillLevel.Novice,
-      Developer: SkillLevel.Competent,
-      Engineer: SkillLevel.Proficient,
-      SeniorEngineer: SkillLevel.Expert,
-      Lead: SkillLevel.Expert,
-      SeniorLead: SkillLevel.Expert,
-    },
     jobLevels: [
        SkillLevel.Novice,
    SkillLevel.Competent,
@@ -676,14 +396,6 @@ const expectedCompetencies: IExpectedCompetency[] = [
   },
   {
     competencyId: 36,
-    jobLevel: {
-      Intern: SkillLevel.Novice,
-      Developer: SkillLevel.Beginner,
-      Engineer: SkillLevel.Proficient,
-      SeniorEngineer: SkillLevel.Expert,
-      Lead: SkillLevel.Expert,
-      SeniorLead: SkillLevel.Expert,
-    },
     jobLevels: [
        SkillLevel.Novice,
    SkillLevel.Beginner,
@@ -696,14 +408,6 @@ const expectedCompetencies: IExpectedCompetency[] = [
   //Communication
   {
     competencyId: 37,
-    jobLevel: {
-      Intern: SkillLevel.Competent,
-      Developer: SkillLevel.Proficient,
-      Engineer: SkillLevel.Proficient,
-      SeniorEngineer: SkillLevel.Expert,
-      Lead: SkillLevel.Expert,
-      SeniorLead: SkillLevel.Expert,
-    },
     jobLevels: [
       SkillLevel.Competent,
       SkillLevel.Proficient,
@@ -715,14 +419,6 @@ const expectedCompetencies: IExpectedCompetency[] = [
   },
   {
     competencyId: 38,
-    jobLevel: {
-      Intern: SkillLevel.Novice,
-      Developer: SkillLevel.Beginner,
-      Engineer: SkillLevel.Competent,
-      SeniorEngineer: SkillLevel.Proficient,
-      Lead: SkillLevel.Proficient,
-      SeniorLead: SkillLevel.Expert,
-    },
     jobLevels: [
       SkillLevel.Novice,
       SkillLevel.Beginner,
@@ -735,14 +431,6 @@ const expectedCompetencies: IExpectedCompetency[] = [
   //Leadership
   {
     competencyId: 39,
-    jobLevel: {
-      Intern: SkillLevel.Novice,
-      Developer: SkillLevel.Novice,
-      Engineer: SkillLevel.Novice,
-      SeniorEngineer: SkillLevel.Beginner,
-      Lead: SkillLevel.Competent,
-      SeniorLead: SkillLevel.Proficient,
-    },
     jobLevels: [
       SkillLevel.Novice,
       SkillLevel.Novice,
@@ -754,14 +442,6 @@ const expectedCompetencies: IExpectedCompetency[] = [
   },
   {
     competencyId: 40,
-    jobLevel: {
-      Intern: SkillLevel.Novice,
-      Developer: SkillLevel.Novice,
-      Engineer: SkillLevel.Novice,
-      SeniorEngineer: SkillLevel.Competent,
-      Lead: SkillLevel.Competent,
-      SeniorLead: SkillLevel.Proficient,
-    },
     jobLevels: [
       SkillLevel.Novice,
       SkillLevel.Novice,
@@ -773,14 +453,6 @@ const expectedCompetencies: IExpectedCompetency[] = [
   },
   {
     competencyId: 41,
-    jobLevel: {
-      Intern: SkillLevel.Novice,
-      Developer: SkillLevel.Novice,
-      Engineer: SkillLevel.Novice,
-      SeniorEngineer: SkillLevel.Beginner,
-      Lead: SkillLevel.Competent,
-      SeniorLead: SkillLevel.Proficient,
-    },
     jobLevels: [
       SkillLevel.Novice,
       SkillLevel.Novice,
@@ -792,14 +464,6 @@ const expectedCompetencies: IExpectedCompetency[] = [
   },
   {
     competencyId: 42,
-    jobLevel: {
-      Intern: SkillLevel.Novice,
-      Developer: SkillLevel.Novice,
-      Engineer: SkillLevel.Novice,
-      SeniorEngineer: SkillLevel.Novice,
-      Lead: SkillLevel.Beginner,
-      SeniorLead: SkillLevel.Competent,
-    },
     jobLevels: [
       SkillLevel.Novice,
       SkillLevel.Novice,
@@ -811,14 +475,6 @@ const expectedCompetencies: IExpectedCompetency[] = [
   },
   {
     competencyId: 43,
-    jobLevel: {
-      Intern: SkillLevel.Novice,
-      Developer: SkillLevel.Novice,
-      Engineer: SkillLevel.Novice,
-      SeniorEngineer: SkillLevel.Beginner,
-      Lead: SkillLevel.Competent,
-      SeniorLead: SkillLevel.Proficient,
-    },
     jobLevels: [
       SkillLevel.Novice,
       SkillLevel.Novice,
@@ -830,14 +486,6 @@ const expectedCompetencies: IExpectedCompetency[] = [
   },
   {
     competencyId: 44,
-    jobLevel: {
-      Intern: SkillLevel.Novice,
-      Developer: SkillLevel.Novice,
-      Engineer: SkillLevel.Novice,
-      SeniorEngineer: SkillLevel.Competent,
-      Lead: SkillLevel.Proficient,
-      SeniorLead: SkillLevel.Expert,
-    },
     jobLevels: [
       SkillLevel.Novice,
       SkillLevel.Novice,
@@ -849,14 +497,6 @@ const expectedCompetencies: IExpectedCompetency[] = [
   },
   {
     competencyId: 45,
-    jobLevel: {
-      Intern: SkillLevel.Beginner,
-      Developer: SkillLevel.Beginner,
-      Engineer: SkillLevel.Competent,
-      SeniorEngineer: SkillLevel.Competent,
-      Lead: SkillLevel.Competent,
-      SeniorLead: SkillLevel.Proficient,
-    },
     jobLevels: [
       SkillLevel.Beginner,
       SkillLevel.Beginner,
