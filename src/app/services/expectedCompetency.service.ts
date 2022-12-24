@@ -1,16 +1,22 @@
-import { Injectable } from '@angular/core';
+import {Injectable} from '@angular/core';
 import {IExpectedCompetency} from "../interfaces/iexpectedCompetency";
 import {expectedCompetencies} from "../data/expectedCompetencies";
 
 @Injectable({
   providedIn: 'root'
 })
-export class JobsService {
+export class ExpectedCompetencyService {
 
   private expectedCompetencies: IExpectedCompetency[] = expectedCompetencies;
-  constructor() { }
+
+  constructor() {
+  }
 
   public getExpectedCompetencies(): IExpectedCompetency[] {
     return this.expectedCompetencies;
+  }
+
+  public getExpectedCompetencyForJobLevel(jobLevel: number): number {
+    return 0;
   }
 }
