@@ -1,9 +1,10 @@
-import {Component, Input, OnInit, QueryList, ViewChildren} from '@angular/core';
+import {Component, EventEmitter, Input, OnInit, Output, QueryList, ViewChildren} from '@angular/core';
 import {ISkillLevel} from "../../interfaces/iskillLevel";
 import {SkillLevelService} from "../../services/skillLevel.service";
-import {MatSelect} from "@angular/material/select";
-import {IExpectedCompetency} from "../../interfaces/iexpectedCompetency";
 import {ExpectedCompetencyService} from "../../services/expectedCompetency.service";
+import {FormControl} from "@angular/forms";
+import {pairwise, startWith} from "rxjs";
+import {ISkillLevelChange} from "../../interfaces/iskilllevelchange";
 
 @Component({
   selector: 'app-skill-level',
@@ -13,23 +14,24 @@ import {ExpectedCompetencyService} from "../../services/expectedCompetency.servi
 export class SkillLevelComponent implements OnInit {
 
   public skillLevels: ISkillLevel[] = []
+
   @Input() public jobId: number = 0;
+  @Output() public valueChanged: EventEmitter<ISkillLevelChange> = new EventEmitter<ISkillLevelChange>();
+  public select: FormControl = new FormControl('');
 
   constructor(private skillLevelService: SkillLevelService, private expectedCompetencyService: ExpectedCompetencyService) {
   }
 
   ngOnInit(): void {
     this.skillLevels = this.skillLevelService.getSkillLevels();
+    this.select.valueChanges.pipe(
+      startWith(this.select.value),
+      pairwise()
+    ).subscribe(([old,value]) => {
+      console.log(old, value);
+      let previousValue: number = +old;
+      let newValue: number = +value;
+      this.valueChanged.emit({previousValue, newValue});
+    });
   }
-
-  public onSelectionChange(): void {
-    // this is just when _one_ value changes.
-    // identify the one.
-    console.log('onSelectionChange');
-  }
-
-  public onOpenedChange(): void {
-    console.log('onOpenedChange')
-  }
-
 }

@@ -11,6 +11,7 @@ import { JobComponent } from './components/job/job.component';
 import { SectionComponent } from './components/section/section.component';
 import { SkillLevelComponent } from './components/skill-level/skill-level.component';
 import { CompetencyComponent } from './components/competency/competency.component';
+import {ReactiveFormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { CompetencyComponent } from './components/competency/competency.componen
     AppRoutingModule,
     BrowserAnimationsModule,
     MaterialModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
