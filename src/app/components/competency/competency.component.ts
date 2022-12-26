@@ -1,7 +1,8 @@
-import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
+import {Component, EventEmitter, Input, OnInit, Output, QueryList, ViewChildren} from '@angular/core';
 import {ICompetency} from "../../interfaces/icompetency";
 import {ISkillLevelChange} from "../../interfaces/iskilllevelchange";
 import {ExpectedCompetencyService} from "../../services/expectedCompetency.service";
+import {SkillLevelComponent} from "../skill-level/skill-level.component";
 
 @Component({
   selector: 'app-competency',
@@ -15,6 +16,7 @@ export class CompetencyComponent implements OnInit {
   public hideExpected = true;
   public hasValue = false;
   @Output()public valueChanged:EventEmitter<ISkillLevelChange> = new EventEmitter<ISkillLevelChange>();
+  @ViewChildren(SkillLevelComponent) skillLevels!: QueryList<SkillLevelComponent>;
   constructor(private expectedCompetencyService: ExpectedCompetencyService) { }
 
   ngOnInit(): void {
@@ -27,6 +29,12 @@ export class CompetencyComponent implements OnInit {
     this.hideExpected = !(event.newValue < jobLevel);
     this.hasValue = true;
     this.valueChanged.emit(event);
+  }
+
+  public clear(): void {
+    this.hasValue = false;
+    this.hideExpected = true;
+    this.skillLevels.forEach(sl => sl.clearValue());
   }
 
 }

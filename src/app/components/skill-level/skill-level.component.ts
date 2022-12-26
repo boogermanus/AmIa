@@ -22,7 +22,7 @@ export class SkillLevelComponent implements OnInit {
   constructor(private skillLevelService: SkillLevelService) {
   }
 
-  ngOnInit(): void {
+  public ngOnInit(): void {
     this.skillLevels = this.skillLevelService.getSkillLevels();
     this.select.valueChanges.pipe(
       startWith(this.select.value),
@@ -30,7 +30,12 @@ export class SkillLevelComponent implements OnInit {
     ).subscribe(([old,value]) => {
       let previousValue: number = +old;
       let newValue: number = +value;
+
       this.valueChanged.emit({previousValue, newValue});
     });
+  }
+
+  public clearValue(): void {
+    this.select.setValue('', {emitEvent: false});
   }
 }

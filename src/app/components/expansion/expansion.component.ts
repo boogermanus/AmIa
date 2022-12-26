@@ -18,8 +18,10 @@ export class ExpansionComponent implements OnInit {
   private _jobId: number = 0;
   @Input() set jobId(value: number) {
     this._jobId = value;
+    this.competencies.forEach(c => c.clear());
     this.disabled = false;
     this.expanded = true;
+
   }
   public get jobId(): number {
     return this._jobId
