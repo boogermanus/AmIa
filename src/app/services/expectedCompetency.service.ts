@@ -24,12 +24,12 @@ export class ExpectedCompetencyService {
   public getExpectedScoreByJobId(id: number): number {
     const mapped = this.expectedCompetencies.map(ec => ec.jobLevels);
     let sum = 0;
-
-    if(id-1 < 0)
+    let index = id-1;
+    if(index < 0)
       return sum;
 
     for (const mappedElement of mapped) {
-      sum += mappedElement[id-1];
+      sum += mappedElement[index];
     }
     return sum;
   }
