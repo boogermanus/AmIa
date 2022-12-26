@@ -1,3 +1,4 @@
 <h4>{{this.competency.name}}</h4>
 <app-skill-level [jobId]="jobId" (valueChanged)="onValueChanged($event)"></app-skill-level>
-<mat-label style="margin-left: 20px; color: red" [hidden]="hideExpected">Skill level not met</mat-label>
+<mat-icon class="icon" fontIcon="error" matTooltip="Skill level not met" matTooltipPosition="right"
+          [hidden]="hideExpected"></mat-icon>

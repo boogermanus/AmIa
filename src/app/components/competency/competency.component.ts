@@ -13,6 +13,8 @@ export class CompetencyComponent implements OnInit {
   @Input()public competency: ICompetency = {id: 0, name: ""}
   @Input()public jobId: number = 0;
   public hideExpected = true;
+  public hasValue = false;
+  @Output()public valueChanged:EventEmitter<ISkillLevelChange> = new EventEmitter<ISkillLevelChange>();
   constructor(private expectedCompetencyService: ExpectedCompetencyService) { }
 
   ngOnInit(): void {
@@ -23,6 +25,8 @@ export class CompetencyComponent implements OnInit {
 
     let jobLevel = expected.jobLevels[this.jobId-1];
     this.hideExpected = !(event.newValue < jobLevel);
+    this.hasValue = true;
+    this.valueChanged.emit(event);
   }
 
 }
