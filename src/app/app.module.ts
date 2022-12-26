@@ -12,6 +12,7 @@ import { SectionComponent } from './components/section/section.component';
 import { SkillLevelComponent } from './components/skill-level/skill-level.component';
 import { CompetencyComponent } from './components/competency/competency.component';
 import {ReactiveFormsModule} from "@angular/forms";
+import { ExpansionComponent } from './components/expansion/expansion.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import {ReactiveFormsModule} from "@angular/forms";
     JobComponent,
     SectionComponent,
     SkillLevelComponent,
-    CompetencyComponent
+    CompetencyComponent,
+    ExpansionComponent
   ],
   imports: [
     BrowserModule,
