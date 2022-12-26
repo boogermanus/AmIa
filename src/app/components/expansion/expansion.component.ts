@@ -12,14 +12,25 @@ import {ISkillLevelChange} from "../../interfaces/iskilllevelchange";
 export class ExpansionComponent implements OnInit {
 
   @Input()public section!: ISection
-  @Input()public disabled = true;
-  @Input()public jobId = 0;
-  @Input()public expanded = false;
+  public disabled = true;
+  public expanded = false;
+
+  private _jobId: number = 0;
+  @Input() set jobId(value: number) {
+    this._jobId = value;
+    this.disabled = false;
+    this.expanded = true;
+  }
+  public get jobId(): number {
+    return this._jobId
+  }
   @ViewChildren(CompetencyComponent)public competencies!: QueryList<CompetencyComponent>;
   @ViewChild(MatExpansionPanel)public panel!: MatExpansionPanel;
   constructor() { }
 
   ngOnInit(): void {
+    this.disabled = true;
+    this.expanded = false;
   }
 
   public onValueChange(event: ISkillLevelChange): void {
