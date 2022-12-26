@@ -1,7 +1,7 @@
 <div class="d-flex justify-content-center">
   <mat-card class="app">
     <app-job (jobChanged)="onJobChange($event)"></app-job>
-    <app-sections [disabled]="sectionsDisabled" [jobId]="jobId"></app-sections>
+    <app-sections [disabled]="sectionsDisabled" [jobId]="jobId" [expanded]="sectionsExpanded"></app-sections>
   </mat-card>
 </div>
 

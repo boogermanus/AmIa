@@ -10,6 +10,7 @@ export class AppComponent {
 
   public jobId: number = 0;
   public sectionsDisabled: boolean = true;
+  public sectionsExpanded: boolean = false;
   @ViewChild(SectionComponent) private sectionComponent!: SectionComponent;
   constructor() {
   }
@@ -17,5 +18,6 @@ export class AppComponent {
   onJobChange(event: string): void {
     this.jobId = +event;
     this.sectionsDisabled = false;
+    this.sectionsExpanded = true;
   }
 }

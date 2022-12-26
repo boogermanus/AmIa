@@ -1,8 +1,8 @@
-<mat-expansion-panel [disabled]="this.disabled">
+<mat-expansion-panel [disabled]="disabled" [expanded]="expanded">
   <mat-expansion-panel-header>
     <mat-panel-title>{{section.name}}</mat-panel-title>
   </mat-expansion-panel-header>
   <div *ngFor="let competency of section.competencies">
-    <app-competency [competency]="competency" [jobId]="jobId"></app-competency>
+    <app-competency [competency]="competency" [jobId]="jobId" (valueChanged)="onValueChange($event)"></app-competency>
   </div>
 </mat-expansion-panel>
