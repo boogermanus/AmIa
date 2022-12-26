@@ -1,6 +1,7 @@
-<mat-expansion-panel [disabled]="disabled" [expanded]="expanded">
+<mat-expansion-panel [disabled]="disabled" [expanded]="expanded" (closed)="expanded = false">
   <mat-expansion-panel-header>
     <mat-panel-title>{{section.name}}</mat-panel-title>
+    <mat-panel-description><mat-icon fontIcon="done" class="icon" [hidden]="hideIcon"></mat-icon></mat-panel-description>
   </mat-expansion-panel-header>
   <div *ngFor="let competency of section.competencies">
     <app-competency [competency]="competency" [jobId]="jobId" (valueChanged)="onValueChange($event)"></app-competency>

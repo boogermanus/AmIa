@@ -14,11 +14,12 @@ export class ExpansionComponent implements OnInit {
   @Input()public section!: ISection
   public disabled = true;
   public expanded = false;
+  public hideIcon = true;
 
   private _jobId: number = 0;
   @Input() set jobId(value: number) {
     this._jobId = value;
-    this.competencies.forEach(c => c.clear());
+    this.competencies?.forEach(c => c.clear());
     this.disabled = false;
     this.expanded = true;
 
@@ -36,10 +37,15 @@ export class ExpansionComponent implements OnInit {
   }
 
   public onValueChange(event: ISkillLevelChange): void {
-    let query = this.competencies.filter(cc => cc.hasValue)
+    let query = this.competencies.filter(cc => cc.hasValue && cc.hideExpected)
 
-    if(query.length === this.competencies.length)
+    if(query.length === this.competencies.length) {
       this.expanded = false;
+      this.hideIcon = false;
+    }
+    else {
+      this.hideIcon = true;
+    }
 
   }
 }
