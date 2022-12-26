@@ -20,4 +20,14 @@ export class ExpectedCompetencyService {
 
     return search;
   }
+
+  public getExpectedScoreByJobId(id: number): number {
+    const mapped = this.expectedCompetencies.map(ec => ec.jobLevels);
+    let sum = 0;
+
+    for (const mappedElement of mapped) {
+      sum += mappedElement[id-1];
+    }
+    return sum;
+  }
 }
