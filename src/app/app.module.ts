@@ -28,7 +28,6 @@ import { ExpansionComponent } from './components/expansion/expansion.component';
     AppRoutingModule,
     BrowserAnimationsModule,
     MaterialModule,
-    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

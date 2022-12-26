@@ -1,6 +1,9 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { SkillLevelComponent } from './skill-level.component';
+import {MaterialModule} from "../../material.module";
+import {NoopAnimationsModule} from "@angular/platform-browser/animations";
+import {ReactiveFormsModule} from "@angular/forms";
 
 describe('SkillLevelComponent', () => {
   let component: SkillLevelComponent;
@@ -8,7 +11,8 @@ describe('SkillLevelComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ SkillLevelComponent ]
+      declarations: [ SkillLevelComponent ],
+      imports: [MaterialModule, NoopAnimationsModule, ReactiveFormsModule]
     })
     .compileComponents();
 

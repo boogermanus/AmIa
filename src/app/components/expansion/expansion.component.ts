@@ -11,7 +11,7 @@ import {ISkillLevelChange} from "../../interfaces/iskilllevelchange";
 })
 export class ExpansionComponent implements OnInit {
 
-  @Input()public section!: ISection
+  @Input()public section: ISection = {name: "", competencies:[]}
   public disabled = true;
   public expanded = false;
   public hideIcon = true;
@@ -38,7 +38,7 @@ export class ExpansionComponent implements OnInit {
   }
 
   public onValueChange(event: ISkillLevelChange): void {
-    let query = this.competencies.filter(cc => cc.hasValue && cc.hideExpected)
+    let query = this.competencies?.filter(cc => cc.hasValue && cc.hideExpected)
 
     if(query.length === this.competencies.length) {
       this.expanded = false;

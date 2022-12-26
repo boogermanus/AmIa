@@ -1,6 +1,8 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { JobComponent } from './job.component';
+import {MaterialModule} from "../../material.module";
+import {NoopAnimationsModule} from "@angular/platform-browser/animations";
 
 describe('JobComponent', () => {
   let component: JobComponent;
@@ -8,7 +10,8 @@ describe('JobComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ JobComponent ]
+      declarations: [ JobComponent ],
+      imports: [MaterialModule, NoopAnimationsModule]
     })
     .compileComponents();
 

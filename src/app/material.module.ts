@@ -7,6 +7,7 @@ import {MatSelectModule} from "@angular/material/select";
 import {MatIconModule} from "@angular/material/icon";
 import {MatTooltipModule} from "@angular/material/tooltip";
 import {MatOptionModule} from "@angular/material/core";
+import {ReactiveFormsModule} from "@angular/forms";
 
 
 @NgModule({
@@ -20,6 +21,7 @@ import {MatOptionModule} from "@angular/material/core";
     MatIconModule,
     MatTooltipModule,
     MatOptionModule,
+    ReactiveFormsModule
   ],
   exports: [
     MatCardModule,
@@ -29,6 +31,7 @@ import {MatOptionModule} from "@angular/material/core";
     MatIconModule,
     MatTooltipModule,
     MatOptionModule,
+    ReactiveFormsModule
   ]
 })
 export class MaterialModule {
