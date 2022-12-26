@@ -1,8 +1,9 @@
-import {Component, Input, OnInit, QueryList, ViewChild, ViewChildren} from '@angular/core';
+import {Component, EventEmitter, Input, OnInit, Output, QueryList, ViewChild, ViewChildren} from '@angular/core';
 import {ISection} from "../../interfaces/isection";
 import {CompetencyComponent} from "../competency/competency.component";
 import {MatExpansionPanel} from "@angular/material/expansion";
 import {ISkillLevelChange} from "../../interfaces/iskilllevelchange";
+import {RatingService} from "../../services/rating.service";
 
 @Component({
   selector: 'app-expansion',
@@ -30,7 +31,7 @@ export class ExpansionComponent implements OnInit {
   }
   @ViewChildren(CompetencyComponent)public competencies!: QueryList<CompetencyComponent>;
   @ViewChild(MatExpansionPanel)public panel!: MatExpansionPanel;
-  constructor() { }
+  constructor(private ratingService: RatingService) { }
 
   ngOnInit(): void {
     this.disabled = true;
@@ -47,6 +48,6 @@ export class ExpansionComponent implements OnInit {
     else {
       this.hideIcon = true;
     }
-
+    this.ratingService.announceRatingChange(event);
   }
 }

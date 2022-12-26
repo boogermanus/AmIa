@@ -13,6 +13,7 @@ import { SkillLevelComponent } from './components/skill-level/skill-level.compon
 import { CompetencyComponent } from './components/competency/competency.component';
 import {ReactiveFormsModule} from "@angular/forms";
 import { ExpansionComponent } from './components/expansion/expansion.component';
+import { RatingComponent } from './components/rating/rating.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { ExpansionComponent } from './components/expansion/expansion.component';
     SectionComponent,
     SkillLevelComponent,
     CompetencyComponent,
-    ExpansionComponent
+    ExpansionComponent,
+    RatingComponent
   ],
   imports: [
     BrowserModule,

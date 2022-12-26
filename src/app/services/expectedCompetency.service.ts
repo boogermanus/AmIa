@@ -25,6 +25,9 @@ export class ExpectedCompetencyService {
     const mapped = this.expectedCompetencies.map(ec => ec.jobLevels);
     let sum = 0;
 
+    if(id-1 < 0)
+      return sum;
+
     for (const mappedElement of mapped) {
       sum += mappedElement[id-1];
     }
