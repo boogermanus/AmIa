@@ -13,4 +13,8 @@ describe('SectionService', () => {
   it('should be created', () => {
     expect(service).toBeTruthy();
   });
+  it('should return data for getSkillLevels', () => {
+    let value = service.getSkillLevels();
+    expect(value.length).toBeGreaterThan(0);
+  })
 });

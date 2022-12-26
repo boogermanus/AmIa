@@ -22,6 +22,7 @@ export class ExpansionComponent implements OnInit {
     this.competencies?.forEach(c => c.clear());
     this.disabled = false;
     this.expanded = true;
+    this.hideIcon = true;
 
   }
   public get jobId(): number {
