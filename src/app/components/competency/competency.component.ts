@@ -19,9 +19,10 @@ export class CompetencyComponent implements OnInit {
   public skillLevelMessage = "";
   @Output()public valueChanged:EventEmitter<ISkillLevelChange> = new EventEmitter<ISkillLevelChange>();
   @ViewChildren(SkillLevelComponent)public skillLevels!: QueryList<SkillLevelComponent>;
+
   constructor(private expectedCompetencyService: ExpectedCompetencyService) { }
 
-  ngOnInit(): void {
+  public ngOnInit(): void {
   }
 
   public onValueChanged(event: ISkillLevelChange) {
