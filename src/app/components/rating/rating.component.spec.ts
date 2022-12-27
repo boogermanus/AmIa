@@ -39,7 +39,14 @@ describe('RatingComponent', () => {
       component.onRatingChanged(expected);
       expect(component.totalScore).toEqual(expected.newValue);
     });
+    it('should set totalScore to newValue minus previousValue', () => {
+      const expected = {previousValue: 10, newValue: 1};
+      component.totalScore = 11;
+      component.onRatingChanged(expected);
+      expect(component.totalScore).toEqual(2);
+    });
   });
+
   describe('jobId', () => {
     it('should set totalScore to zero', () =>{
       component.totalScore = 10;
@@ -55,6 +62,9 @@ describe('RatingComponent', () => {
       expectedCompetencySpy.getExpectedScoreByJobId.and.returnValue(1);
       component.jobId = 0;
       expect(component.neededScore).toEqual(1);
-    })
+    });
+    it('should return zero', () => {
+      expect(component.jobId).toEqual(0);
+    });
   });
 });
