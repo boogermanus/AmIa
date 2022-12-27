@@ -29,7 +29,7 @@ export class RatingComponent implements OnInit {
     this.ratingService.ratingChanged.subscribe(rating => this.onRatingChanged(rating))
   }
 
-  ngOnInit(): void {
+  public ngOnInit(): void {
   }
 
   public onRatingChanged(rating: ISkillLevelChange) {
