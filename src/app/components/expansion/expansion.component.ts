@@ -29,8 +29,8 @@ export class ExpansionComponent implements OnInit {
   public get jobId(): number {
     return this._jobId
   }
+
   @ViewChildren(CompetencyComponent)public competencies!: QueryList<CompetencyComponent>;
-  @ViewChild(MatExpansionPanel)public panel!: MatExpansionPanel;
   constructor(private ratingService: RatingService) { }
 
   ngOnInit(): void {
