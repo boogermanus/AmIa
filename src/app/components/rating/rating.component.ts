@@ -29,7 +29,8 @@ export class RatingComponent implements OnInit {
     'bg-primary': false,
     'bg-warning': false,
     'bg-danger': false,
-    'bg-success': false
+    'bg-success': false,
+    'bg-info': false
   }
 
   constructor(private ratingService: RatingService, private expectedCompetencyService: ExpectedCompetencyService) {
@@ -51,19 +52,11 @@ export class RatingComponent implements OnInit {
   }
 
   private setRattingClasses(): void {
-    this.ratingClasses['bg-primary'] = false;
-    this.ratingClasses['bg-warning']= false;
-    this.ratingClasses['bg-danger'] = false;
-    this.ratingClasses['bg-success'] = false;
-
-    if(this.rating <= 0.25)
-      this.ratingClasses['bg-danger'] = true;
-    else if(this.rating <= 0.50)
-      this.ratingClasses['bg-warning'] = true;
-    else if(this.rating <= 0.75)
-      this.ratingClasses['bg-primary'] = true;
-    else
-      this.ratingClasses['bg-success'] = true;
+    this.ratingClasses['bg-danger'] = this.rating <= 0.25;
+    this.ratingClasses['bg-warning']= this.rating <= 0.50;
+    this.ratingClasses['bg-info'] = this.rating <= 0.75
+    this.ratingClasses['bg-primary'] = this.rating <= 0.99
+    this.ratingClasses['bg-success'] = this.rating >= 1;
   }
 
 }

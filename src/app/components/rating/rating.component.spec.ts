@@ -45,6 +45,41 @@ describe('RatingComponent', () => {
       component.onRatingChanged(expected);
       expect(component.totalScore).toEqual(2);
     });
+    it('should set bg-danger to true', () => {
+      component.neededScore = 4;
+      component.totalScore = 1;
+      component.onRatingChanged({previousValue: 0, newValue: 0});
+
+      expect(component.ratingClasses['bg-danger']).toBeTrue();
+    });
+    it('should set bg-warning to true', () => {
+      component.neededScore = 4;
+      component.totalScore = 2;
+      component.onRatingChanged({previousValue: 0, newValue: 0});
+
+      expect(component.ratingClasses['bg-warning']).toBeTrue();
+    });
+    it('should set bg-info to true', () => {
+      component.neededScore = 4;
+      component.totalScore = 3;
+      component.onRatingChanged({previousValue: 0, newValue: 0});
+
+      expect(component.ratingClasses['bg-info']).toBeTrue();
+    });
+    it('should set bg-primary to true', () => {
+      component.neededScore = 4;
+      component.totalScore = 3.1;
+      component.onRatingChanged({previousValue: 0, newValue: 0});
+
+      expect(component.ratingClasses['bg-primary']).toBeTrue();
+    });
+    it('should set bg-success to true', () => {
+      component.neededScore = 4;
+      component.totalScore = 4;
+      component.onRatingChanged({previousValue: 0, newValue: 0});
+
+      expect(component.ratingClasses['bg-success']).toBeTrue();
+    });
   });
 
   describe('jobId', () => {
