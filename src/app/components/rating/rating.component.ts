@@ -25,6 +25,13 @@ export class RatingComponent implements OnInit {
   public totalScore: number = 0;
   public rating: number = 0;
 
+  public ratingClasses: any = {
+    'bg-primary': false,
+    'bg-warning': false,
+    'bg-danger': false,
+    'bg-success': false
+  }
+
   constructor(private ratingService: RatingService, private expectedCompetencyService: ExpectedCompetencyService) {
     this.ratingService.ratingChanged.subscribe(rating => this.onRatingChanged(rating))
   }
@@ -40,6 +47,23 @@ export class RatingComponent implements OnInit {
 
     this.totalScore += rating.newValue;
     this.rating = +Math.fround(this.totalScore/this.neededScore).toFixed(2);
+    this.setRattingClasses();
+  }
+
+  private setRattingClasses(): void {
+    this.ratingClasses['bg-primary'] = false;
+    this.ratingClasses['bg-warning']= false;
+    this.ratingClasses['bg-danger'] = false;
+    this.ratingClasses['bg-success'] = false;
+
+    if(this.rating <= 0.25)
+      this.ratingClasses['bg-danger'] = true;
+    else if(this.rating <= 0.50)
+      this.ratingClasses['bg-warning'] = true;
+    else if(this.rating <= 0.75)
+      this.ratingClasses['bg-primary'] = true;
+    else
+      this.ratingClasses['bg-success'] = true;
   }
 
 }
