@@ -21,7 +21,8 @@ import {ReactiveFormsModule} from "@angular/forms";
     MatIconModule,
     MatTooltipModule,
     MatOptionModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MatOptionModule
   ],
   exports: [
     MatCardModule,
@@ -31,7 +32,8 @@ import {ReactiveFormsModule} from "@angular/forms";
     MatIconModule,
     MatTooltipModule,
     MatOptionModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MatOptionModule
   ]
 })
 export class MaterialModule {
