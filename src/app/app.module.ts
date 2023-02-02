@@ -14,6 +14,7 @@ import { CompetencyComponent } from './components/competency/competency.componen
 import {ReactiveFormsModule} from "@angular/forms";
 import { ExpansionComponent } from './components/expansion/expansion.component';
 import { RatingComponent } from './components/rating/rating.component';
+import {MatRadioModule} from "@angular/material/radio";
 
 @NgModule({
   declarations: [
@@ -25,12 +26,13 @@ import { RatingComponent } from './components/rating/rating.component';
     ExpansionComponent,
     RatingComponent
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    BrowserAnimationsModule,
-    MaterialModule,
-  ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        BrowserAnimationsModule,
+        MaterialModule,
+        MatRadioModule,
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })

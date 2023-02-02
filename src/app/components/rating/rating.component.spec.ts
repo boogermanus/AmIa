@@ -1,6 +1,7 @@
 import {ComponentFixture, TestBed} from '@angular/core/testing';
 import {RatingComponent} from './rating.component';
 import {ExpectedCompetencyService} from "../../services/expectedCompetency.service";
+import {MaterialModule} from "../../material.module";
 
 describe('RatingComponent', () => {
   let component: RatingComponent;
@@ -11,6 +12,7 @@ describe('RatingComponent', () => {
     const spy = jasmine.createSpyObj('expectedCompetencyService',['getExpectedScoreByJobId']);
     await TestBed.configureTestingModule({
       declarations: [RatingComponent],
+      imports: [MaterialModule],
       providers: [{provide: ExpectedCompetencyService, useValue: spy}]
     })
       .compileComponents();

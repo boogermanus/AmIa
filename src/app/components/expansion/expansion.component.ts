@@ -39,7 +39,7 @@ export class ExpansionComponent implements OnInit {
   }
 
   public onValueChange(event: ISkillLevelChange): void {
-    let query = this.competencies?.filter(cc => cc.hasValue && cc.hideExpected)
+    let query = this.competencies?.filter(cc => cc.hasValue)
 
     if(query.length === this.competencies.length) {
       this.expanded = false;

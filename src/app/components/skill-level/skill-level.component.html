@@ -1,8 +1,12 @@
-<mat-form-field appearance="fill">
-  <mat-label>Skill Level</mat-label>
-  <mat-select [formControl]="select">
-    <mat-option *ngFor="let skillLevel of skillLevels" [value]="skillLevel.Value">
-      {{skillLevel.DisplayText}}
-    </mat-option>
-  </mat-select>
-</mat-form-field>
+<!--<mat-form-field appearance="fill">-->
+<!--  <mat-label>Skill Level</mat-label>-->
+<!--  <mat-select [formControl]="select">-->
+<!--    <mat-option *ngFor="let skillLevel of skillLevels" [value]="skillLevel.Value">-->
+<!--      {{skillLevel.DisplayText}}-->
+<!--    </mat-option>-->
+<!--  </mat-select>-->
+<!--</mat-form-field>-->
+<mat-radio-group [formControl]="select" ngDefaultControl>
+    <mat-radio-button style="margin-bottom: 10px; width: 100vw" *ngFor="let skillLevel of skillLevels"
+                      [value]="skillLevel.Value">{{skillLevel.DisplayText}}</mat-radio-button>
+</mat-radio-group>
