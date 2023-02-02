@@ -7,6 +7,6 @@
 <!--  </mat-select>-->
 <!--</mat-form-field>-->
 <mat-radio-group [formControl]="select" ngDefaultControl>
-  <mat-radio-button style="margin-left: 10px" *ngFor="let skillLevel of skillLevels"
-                    [value]="skillLevel.Value">{{skillLevel.DisplayText}}</mat-radio-button>
+    <mat-radio-button style="margin-bottom: 10px; width: 100vw" *ngFor="let skillLevel of skillLevels"
+                      [value]="skillLevel.Value">{{skillLevel.DisplayText}}</mat-radio-button>
 </mat-radio-group>
